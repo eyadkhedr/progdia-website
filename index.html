@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progdia - Future of Productivity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Welcome Popup Modal -->
+    <div id="celestialPopup">
+        <div class="quantumCard">
+            <button class="eventHorizonClose">×</button>
+            <div class="chronoBadge">Time-Locked Offer</div>
+            <div class="singularityIcon" style="position:absolute;top:15%;right:-240px;transform:translateY(-20%);width:600px;height:600px;z-index:10;">
+                <img src="assets/images/exclusive-artifact.png" alt="Exclusive Artifact">
+            </div>
+            <h2 class="stellarTitle">Presale Reward</h2>
+            <p class="novaText">Early adopters who purchase until we publish PROGDIA we offer <span class="photonHighlight">permanent exclusive suit</span> that cannot be obtained through any future means.</p>
+            <p class="novaText" style="width:60%;">This digital relic will demonstrate your pioneer status in our ecosystem with unique visual properties.</p>
+            
+            <div class="pulsarButtonGroup">
+                <button class="cosmicButton primary" style="background: linear-gradient(135deg, #ff7707, #E66702); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(230, 103, 2, 0.3);">
+                    <a href="#versions" style="color: white; text-decoration: none; font-weight: 600;">Pricing</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <link rel="icon" href="assets/images/logo.png" type="image/png">
+        <div class="navbar-container">
+            <a href="#mainpage" class="logo">
+                <img src="assets/images/logo.png" alt="Progdia Logo">
+                Progdia
+            </a>
+            <div class="nav-content">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#mainpage">Home</a></li>
+                        <li><a href="#vision">Vision</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#versions">Pricing</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-buttons-container">
+                    <div class="nav-buttons">
+                        <div id="authButtons">
+                            <button class="nav-button login-btn" id="openLoginModal">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </button>
+                            <button class="nav-button signup-btn" id="openSignupModal">
+                                <i class="fas fa-user-plus"></i> Sign Up
+                            </button>
+                        </div>
+                        <div class="user-menu-container" id="userMenuContainer" style="display: none;">
+                            <button class="nav-button user-btn" id="userButton">
+                                <i class="fas fa-user-circle"></i>
+                                <span id="usernameDisplay">User</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="user-menu" id="userMenu">
+                                <a href="pages/dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                                <a href="pages/profile.html"><i class="fas fa-user"></i> Profile</a>
+                                <a href="pages/settings.html"><i class="fas fa-cog"></i> Settings</a>
+                                <button id="logoutButton"><i class="fas fa-sign-out-alt"></i> Log Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="mainpage">
+            <div class="hero-content">
+                <h1 class="slide-up">Unlock Your <span>Potential</span> with <span class="highlight">PROGDIA</span></h1>
+                <p class="slide-up delay-1">The future of productivity is here. Transform your study habits with our AI-powered platform designed for modern students.</p>
+                <div class="hero-buttons">
+                    <a href="#versions" class="hero-button primary-btn slide-up delay-2">
+                        <i class="fas fa-rocket"></i> Get Started
+                    </a>
+                    <a href="#vision" class="hero-button secondary-btn slide-up delay-3">
+                        <i class="fas fa-play-circle"></i> Learn More
+                    </a>
+                    <a href="https://www.instagram.com/progdia" class="hero-button secondary-btn slide-up delay-3" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7.75 2C4.34 2 2 4.34 2 7.75v8.5C2 19.66 4.34 22 7.75 22h8.5c3.41 0 5.75-2.34 5.75-5.75v-8.5C22 4.34 19.66 2 16.25 2h-8.5zm0 2h8.5c1.99 0 3.25 1.26 3.25 3.25v8.5c0 1.99-1.26 3.25-3.25 3.25h-8.5c-1.99 0-3.25-1.26-3.25-3.25v-8.5c0-1.99 1.26-3.25 3.25-3.25zm4.25 2.75a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 2a2.5 2.5 0 110 5 2.5 2.5 0 010-5zm3.75-.5a1 1 0 110 2 1 1 0 010-2z"/>
+                        </svg>
+                        Follow Us
+                    </a>
+                </div>
+            </div>
+            <img style="padding-left:10%;" src="assets/images/hero-sloth.png" alt="Progdia Hero Image" class="hero-image slide-up delay-4">
+        </section>
+
+        <section id="vision">
+            <div class="section-header slide-up">
+                <h2>Our Vision</h2>
+                <p class="section-subtitle">Empowering the next generation of learners with <span class="highlight">PROGDIA's</span> cutting-edge productivity tools</p>
+            </div>
+            <div class="vision-content">
+                <div class="vision-text slide-up">
+                    <p>At <span class="highlight">PROGDIA</span>, we believe that productivity should be fun, engaging, and visually rewarding. Our platform transforms mundane tasks into exciting quests where you earn XP, unlock achievements, and customize your character with stylish outfits and accessories.</p>
+                    <p>We're not just building another productivity app - we're creating a gamified ecosystem where completing tasks rewards you with exclusive wardrobe items, character upgrades, and the ability to showcase your achievements through personalized avatar customization.</p>
+                    <p>Our vision is a world where students are motivated by visual rewards and character progression, making productivity feel like an exciting adventure. Join us in turning your study sessions into a rewarding journey of self-expression and achievement.</p>
+                    <a href="#features" class="hero-button secondary-btn" style="display: inline-flex; margin-top: 1.5rem;">
+                        <i class="fas fa-arrow-right"></i> Explore Features
+                    </a>
+                </div>
+                <div class="vision-image slide-up delay-1">
+                    <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: contain;">
+                        <source src="assets/videos/prototype.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Vision Illustration" style="display: none;" id="visionFallback">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features" style="padding: 2rem 0; margin: 1rem 0; background: #f8f9fa; display: block !important;">
+            <div class="container">
+                <div class="section-title" style="text-align: center; margin-bottom: 2rem;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem; ">Features</h2>
+                    <p style="font-size: 1.1rem; color: #666;">Discover what makes Progdia special</p>
+                </div>
+            
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Smart Schedule</h3>
+                        <p>AI-powered scheduling that optimizes your study sessions based on your habits, energy levels, and deadlines.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Gamified Tasks</h3>
+                        <p>Turn your to-do list into quests. Earn XP, unlock achievements, and level up your productivity character.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Study Groups</h3>
+                        <p>Collaborate with classmates, share tasks, and motivate each other to stay on track with group challenges.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3>Reward Wardrobe</h3>
+                        <p>Unlock stylish outfits and accessories for your avatar by completing tasks and maintaining streaks.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Tournaments</h3>
+                        <p>Compete in weekly productivity tournaments against friends or the Progdia community for exclusive rewards.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI Assistant</h3>
+                        <p>Our smart assistant helps break down complex projects, suggests optimal study times, and provides motivation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="versions">
+            <div class="section-header slide-up">
+                <h2>Choose Your Plan</h2>
+                <p class="section-subtitle">Find the perfect <span class="highlight">PROGDIA</span> plan for your academic journey</p>
+            </div>
+            <div class="version-cards">
+                <div class="version-card slide-up">
+                    <h3>Standard</h3>
+                    <p class="price">$0<span>/month</span></p>
+                    <ul>
+                        <li>Basic productivity tracking</li>
+                        <li>Limited tournaments</li>
+                        <li>5 Friends</li>
+                        <li>4 custom habits</li>
+                        <li>Daily streaks</li>
+                        <li>Basic calendar</li>
+                    </ul>
+                    <button class="version-btn" id="freePlanBtn">Get Started</button>
+                </div>
+                <div class="version-card premium slide-up delay-1">
+                    <div class="version-badge">Most Popular</div>
+                    <h3>Monthly Premium</h3>
+                    <p class="price">$1.99<span>/month</span></p>
+                    <ul>
+                        <li>All Standard Features</li>
+                        <li>Advanced AI assistance</li>
+                        <li>Unlimited Friends and Tasks</li>
+                        <li>Enhanced Analytics</li>
+                        <li>Advanced Peer Support</li>
+                        <li>Ad-free Experience</li>
+                        <li>Exclusive Rewards</li>
+                    </ul>
+                    <div id="monthlyBtnContainer" style="display: none; text-align: center;">
+                        <stripe-buy-button
+                            buy-button-id="buy_btn_1RpvGIAXmD3Ea86MjuJCL9pd"
+                            publishable-key="pk_live_3vHUVaZnTnJsomdqF8CUY1qB" />
+                    </div>
+                    <button class="version-btn" id="monthlyBtn" style="display: block;">Login to Subscribe</button>
+                </div>
+                <div class="version-card premium slide-up delay-2">
+                    <h3>Annual Premium</h3>
+                    <p class="price">$14.99<span>/year</span></p>
+                    <ul>
+                        <li>All Standard Features</li>
+                        <li>Advanced AI assistance</li>
+                        <li>Unlimited Friends and Tasks</li>
+                        <li>Enhanced Analytics</li>
+                        <li>Advanced Peer Support</li>
+                        <li>Ad-free Experience</li>
+                        <li>Exclusive Rewards</li>
+                    </ul>
+                    <div id="annualBtnContainer" style="display: none; text-align: center;">
+                        <stripe-buy-button
+                            buy-button-id="buy_btn_1RpvGaAXmD3Ea86MizKR0se4"
+                            publishable-key="pk_live_3vHUVaZnTnJsomdqF8CUY1qB" />
+                    </div>
+                    <button class="version-btn" id="annualBtn" style="display: block;">Login to Subscribe</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Progdia</h3>
+                <p>The future of student productivity. Empowering learners worldwide with intelligent tools and gamified motivation.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/progdia" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#mainpage">Home</a>
+                <a href="#vision">About Us</a>
+                <a href="#versions">Pricing</a>
+                <a href="pages/blog.html">Blog</a>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <a href="pages/help.html">Help Center</a>
+                <a href="pages/tutorials.html">Tutorials</a>
+                <a href="pages/webinars.html">Webinars</a>
+                <a href="pages/community.html">Community</a>
+                <a href="pages/contact.html">Contact Us</a>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <a href="pages/privacy.html">Privacy Policy</a>
+                <a href="pages/terms.html">Terms of Service</a>
+                <a href="pages/cookies.html">Cookie Policy</a>
+                <a href="pages/gdpr.html">GDPR</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Progdia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Welcome Back</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form class="auth-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" class="form-control" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </button>
+                    <div class="status-message" id="loginStatus"></div>
+                    
+                    <div style="text-align: center; margin: 0.75rem 0;">
+                        <div style="border-top: 1px solid #ddd; margin: 0.75rem 0; position: relative;">
+                            <span style="background: white; padding: 0 0.75rem; color: #666; font-size: 0.9rem;">or</span>
+                        </div>
+                        <div id="googleSignInButton" style="display: flex; justify-content: center; margin-top: 0.75rem;"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <p>Don't have an account? <span class="toggle-auth" id="showSignup">Sign up</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create Account</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form class="auth-form" id="signupForm">
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+                        <input type="text" id="signupName" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupUsername">Username</label>
+                        <input type="text" id="signupUsername" class="form-control" placeholder="Enter a unique username" required>
+                        <div class="username-error" id="usernameError" style="display: none; color: #e74c3c; font-size: 0.9rem; margin-top: 0.5rem;"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email</label>
+                        <input type="email" id="signupEmail" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" class="form-control" placeholder="Create a password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-user-plus"></i> Sign Up
+                    </button>
+                    <div class="status-message" id="signupStatus"></div>
+                    
+                    <div style="text-align: center; margin: 0.75rem 0;">
+                        <div style="border-top: 1px solid #ddd; margin: 0.75rem 0; position: relative;">
+                            <span style="background: white; padding: 0 0.75rem; color: #666; font-size: 0.9rem;">or</span>
+                        </div>
+                        <div id="googleSignUpButton" style="display: flex; justify-content: center; margin-top: 0.75rem;"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <p>Already have an account? <span class="toggle-auth" id="showLogin">Login</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="modal" id="logoutModal">
+        <div class="modal-content" style="max-width: 400px;">
+            <div class="modal-header">
+                <h2>Log Out</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to log out?</p>
+                <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                    <button class="btn btn-secondary" id="cancelLogout" style="flex: 1;">
+                        <i class="fas fa-times"></i> Cancel
+                    </button>
+                    <button class="btn btn-primary" id="confirmLogout" style="flex: 1;">
+                        <i class="fas fa-sign-out-alt"></i> Log Out
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Sign-In SDK -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script type="module" src="assets/js/script.js"></script>
+</body>
+</html>
