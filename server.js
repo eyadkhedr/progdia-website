@@ -1,5 +1,7 @@
+require('dotenv').config(); // Add this at the very top
+
 const express = require('express');
-const stripe = require('stripe')('sk_live_3vHUVaZnTnJsomdqF8CUY1qB');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const admin = require('firebase-admin');
 const cors = require('cors');
 
